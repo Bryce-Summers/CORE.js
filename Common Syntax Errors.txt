@@ -1,0 +1,30 @@
+if is common for me to write a function as:
+
+foo() ->
+
+which is not caught by the coffeescript interpreter.
+
+it should instead be written as:
+
+foo: () ->
+
+
+the @ sign must not be ommitted to ensure proper internal class scoping.
+
+
+always put the trailing '()' braces after a function call, because otherwise it assumes you want the function and the function is true when you are conditioning on the return value.
+
+--> Always Use foo(), not foo.
+
+
+Make sure to spell thinks like isEmissiveSource correctly.
+
+if a random undefined comes from a return array value, make sure ever part of that function returns a list of nulls of the appropiate length.
+
+
+Ah!!! Since by BSP assumes that the first node to give a valid intersection is the closest one, the erroneous ray split was returned.
+
+Never instantiate a vector with a non-0 z component!!! that breaks most of my 2D beam tracing assumptions!
+
+
+Coffeescript doesn't scope local variables to for loops! Use class based variables instead... or a single workaround scope.
